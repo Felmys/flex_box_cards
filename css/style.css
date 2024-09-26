@@ -1,0 +1,58 @@
+:root {
+    --bgc: rgb(178, 236, 225);
+    --red: rgb(186, 39, 74);
+    --blue: rgb(33, 145, 251);
+    --lblue: rgb(140, 222, 220);
+    --redd: rgb(132, 28, 38);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--bgc);
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: var(--red);
+    width: 20rem;
+    border-radius: 10px;
+}
+.card img {
+    border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+.card-body p {
+    line-height: 1.5;
+    text-align: justify;
+}
+.card-body a {
+    text-decoration: none;
+    color: var(--lblue);
+    background-color: var(--redd);
+    padding: .5rem 1rem;
+    width: 5rem;
+    display: block;
+    border-radius: 5px;
+}
+.card-body a:hover {
+    background-color: var(--rred);;
+}
